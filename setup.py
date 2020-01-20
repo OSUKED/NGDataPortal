@@ -5,7 +5,7 @@ with open('ReadMe.md', 'r') as f:
 
 setuptools.setup(
     name="NGDataPortal", 
-    version="1.0.1",
+    version="1.0.3",
     author="Ayrton Bourn",
     author_email="AyrtonBourn@Outlook.com",
     description="Package for accessing the NG ESO data portal API",
@@ -13,6 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/AyrtonB/National-Grid-Data-Portal",
     packages=setuptools.find_packages(),
+    package_data={'NGDataPortal':['*']},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
