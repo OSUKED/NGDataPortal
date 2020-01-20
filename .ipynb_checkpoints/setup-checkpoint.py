@@ -5,7 +5,7 @@ with open('ReadMe.md', 'r') as f:
 
 setuptools.setup(
     name="NGDataPortal", 
-    version="0.0.1",
+    version="1.0.1",
     author="Ayrton Bourn",
     author_email="AyrtonBourn@Outlook.com",
     description="Package for accessing the NG ESO data portal API",
