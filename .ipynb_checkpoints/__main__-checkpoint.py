@@ -89,3 +89,7 @@ class Wrapper():
         df = pd.DataFrame(r_json['result']['records'])
 
         return df
+
+    
+if __name__ == "__main__":
+    main()
