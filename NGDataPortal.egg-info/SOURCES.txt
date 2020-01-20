@@ -1,0 +1,5 @@
+setup.py
+NGDataPortal.egg-info/PKG-INFO
+NGDataPortal.egg-info/SOURCES.txt
+NGDataPortal.egg-info/dependency_links.txt
+NGDataPortal.egg-info/top_level.txt
