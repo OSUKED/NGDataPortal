@@ -1,17 +1,19 @@
 """
 Imports
 """
-import json
 import pandas as pd
 import warnings
 import requests
+import json
 
 """
 Main Scripts
 """
-with open('stream_to_resource_id.json', 'r') as fp:
+## Loading static files
+with open('NGDataPortal/stream_to_resource_id.json', 'r') as fp:
     stream_2_id_map = json.load(fp)
-
+    
+## Main class
 class Wrapper():
     def __init__(self, stream):
         self.stream = stream
