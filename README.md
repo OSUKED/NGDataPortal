@@ -27,6 +27,8 @@ The module's <i>Wrapper</i> class is the main interface with the API, it can be 
 from NGDataPortal import Wrapper
 ```
 
+n.b. if you haven't already downloaded the module you can use ```pip install NGDataPortal```
+
 <br>
 
 To query a data stream simply specifying the name when the wrapper class is initialised and then use the <i>.query_API()</i> method
