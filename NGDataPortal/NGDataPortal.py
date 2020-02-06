@@ -20,6 +20,7 @@ class Wrapper():
     def __init__(self, stream):
         self.stream = stream
         self.resource_id = stream_2_id_map[self.stream]
+        self.streams = list(stream_2_id_map.keys()) 
         
     def NG_request(self, params={}):    
         url_root = 'https://national-grid-admin.ckan.io/api/3/action/datastore_search'
