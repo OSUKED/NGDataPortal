@@ -31,7 +31,7 @@ n.b. if you haven't already downloaded the module you can use ```pip install NGD
 
 <br>
 
-To query a data stream simply specifying the name when the wrapper class is initialised and then use the <i>.query_API()</i> method
+To query a data stream simply specifying the name when the wrapper class is initialised and then use the <i>.query_API()</i> method. To see what data streams are available you can use ```wrapper.streams``` which will return a list of those that are available.
 
 ```python
 stream = 'embedded-wind-and-solar-forecasts'
