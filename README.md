@@ -88,7 +88,7 @@ Settlement Period|Half-hourly Charge|Run Type|Total Daily BSUoS Charge|BSUoS Pri
 
 <b>Fully Extensible Queries</b>
 
-One of the advantages in the National Grid opting to use a CKAN backend for the API is that it enables PostgreSQL queries to be directly carried out.
+One of the advantages in the National Grid opting to use a CKAN backend for the API is that it enables PostgreSQL queries to be directly carried out. This provides considerable advantages in many applications - for example if analysing frequency deviation events you can filter for periods when the value goes outside specified limits, significantly reducing the volume of returned data which would otherwise cover every second.
 
 As an example we'll formally define the SQL string that is created 'under-the-hood' when a date range request is carried out.
 
