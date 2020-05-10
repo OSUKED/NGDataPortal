@@ -14,7 +14,7 @@ The new <a href="https://data.nationalgrideso.com/">National Grid ESO Data Porta
 
 This module creates a Python wrapper around the Data Portal API, providing a more natural way to query data from the National Grid. It has been developed in such a way as to quickly speed up common requests but also enable the full capabilities provided through CKAN. If you have any ideas for the module please feel free to contribute.
 
-The package can be installed using:
+The module can be installed using:
 ```bash
 pip install NGDataPortal
 ```
