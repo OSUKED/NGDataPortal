@@ -8,16 +8,16 @@
  
 The new <a href="https://data.nationalgrideso.com/">National Grid ESO Data Portal</a> was created in order to provide a <i>"centralised repository for published ESO data"</i> through means of a public API backed by a CKAN database. Currently it is still in Beta and the layout of the API as well as its contents may be subject to future change, furthermore it should be noted that during this stage the data streams may be updated later than their historic counterparts.
 
-The package can be installed using:
-```bash
-pip install NGDataPortal
-```
-
 <br>
 
 <b>About this Wrapper</b>
 
 This module creates a Python wrapper around the Data Portal API, providing a more natural way to query data from the National Grid. It has been developed in such a way as to quickly speed up common requests but also enable the full capabilities provided through CKAN. If you have any ideas for the module please feel free to contribute.
+
+The package can be installed using:
+```bash
+pip install NGDataPortal
+```
 
 <br>
 <br>
