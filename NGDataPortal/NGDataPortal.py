@@ -16,12 +16,7 @@ with open(resource_filepath, 'r') as fp:
     stream_to_id_map = json.load(fp)
     
 ## Main class
-class Wrapper():
-    def __init__(self, stream):
-        self.stream = stream
-        self.resource_id = stream_to_id_map[self.stream]
-        self.streams = list(stream_to_id_map.keys()) 
-        
+class Wrapper():        
     def NG_request(self, params={}):    
         url_root = 'https://national-grid-admin.ckan.io/api/3/action/datastore_search'
 
@@ -94,6 +89,14 @@ class Wrapper():
         df = pd.DataFrame(r_json['result']['records'])
 
         return df
+    
+    def assign_stream(self, stream):
+        self.stream = stream
+        self.resource_id = stream_to_id_map[self.stream]
+        
+    def __init__(self, stream):
+        self.assign_stream(stream)
+        self.streams = list(stream_to_id_map.keys()) 
 
     
 if __name__ == "__main__":
