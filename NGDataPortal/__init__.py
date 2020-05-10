@@ -3,6 +3,6 @@ __version__ = "1.0.5"
 
 ## Imports
 from .NGDataPortal import (
-  Wrapper,
+  Wrapper, stream_to_id_map
 )
 
