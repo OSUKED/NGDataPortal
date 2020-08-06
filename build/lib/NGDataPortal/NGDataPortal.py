@@ -34,7 +34,12 @@ class Wrapper():
 
     def check_request_success(self, r_json):
         if r_json['success'] == False:
-            err_msg = r_json['error']['message']
+            
+            if 'message' in r_json['error'].keys():
+                err_msg = r_json['error']['message']
+            else:
+                err_msg = r_json['error']['info']['orig']
+
             self.raise_(err_msg)
 
     date_between = lambda self, dt_col, start_date, end_date: f'SELECT * from "{self.resource_id}" WHERE "{dt_col}" BETWEEN \'{start_date}\'::timestamp AND \'{end_date}\'::timestamp ORDER BY "{dt_col}"' 
