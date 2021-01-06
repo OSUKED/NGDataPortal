@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/235113510.svg)](https://zenodo.org/badge/latestdoi/235113510)
+
 # National Grid Data Portal API Wrapper
 
 <br>
