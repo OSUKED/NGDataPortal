@@ -1,6 +1,8 @@
 # Compiled python modules.
 *.pyc
 
+nbs/**
+
 # Setuptools distribution folder.
 /dist/
 
