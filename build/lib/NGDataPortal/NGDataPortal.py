@@ -101,7 +101,10 @@ class Wrapper():
         
     def __init__(self, stream):
         self.assign_stream(stream)
-        self.streams = list(stream_to_id_map.keys()) 
+        self.streams = list(stream_to_id_map.keys())
+
+    def print_name(self):
+        print("Akbar")
 
     
 if __name__ == "__main__":
