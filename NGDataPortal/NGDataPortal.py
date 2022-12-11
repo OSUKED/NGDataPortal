@@ -7,6 +7,8 @@ import requests
 import json
 import os
 
+from NGDataPortal.datetime_utils import add_utc_datetime
+
 """
 Main Scripts
 """
@@ -109,6 +111,8 @@ class Wrapper:
         self.check_request_success(r_json)
 
         df = pd.DataFrame(r_json["result"]["records"])
+
+        df = add_utc_datetime(df)
 
         return df
 
